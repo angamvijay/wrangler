@@ -257,6 +257,15 @@ Number
  : Int ('.' Digit*)?
  ;
 
+BYTE_SIZE
+ : [0-9]+ ('B' | 'KB' | 'MB' | 'GB' | 'TB' | 'PB')
+ ;
+
+TIME_DURATION
+ : [0-9]+ ('ns' | 'us' | 'ms' | 's' | 'm' | 'h' | 'd')
+ ;
+
+
 Identifier
  : [a-zA-Z_\-] [a-zA-Z_0-9\-]*
  ;
